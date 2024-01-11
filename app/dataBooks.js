@@ -20,7 +20,7 @@ dayjs.locale('fr');
 module.exports = () => {
   // on va trier notre tableau en fonction des dates
   books.sort((a, b) => {
-    return dayjs(a.date).year() - dayjs(b.date).year();
+    return dayjs(a.releaseDate).year() - dayjs(b.releaseDate).year();
   });
 
   //initialise l'entete du tableau à vide
